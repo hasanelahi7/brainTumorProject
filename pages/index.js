@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Navbar from "../components/navbar.js";
+import { useEffect } from "react";
 
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
 
+  
   const handleTryClick = () => {
     router.push("/try");
   };
