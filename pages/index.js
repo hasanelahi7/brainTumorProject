@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2">
           <img
-            src="brainTumorProject/brain_img.png"
+            src="/brainTumorProject/brain_img.png"
             alt="product"
             className="rounded-lg hidden md:block"
           />
