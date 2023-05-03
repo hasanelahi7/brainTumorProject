@@ -5,7 +5,7 @@ const nextConfig = {
     loader: "akamai",
     path: ""
   },
-  basePath: '/braibrainTumorProjectnTumor',
+  basePath: '/brainTumorProject',
   assetPrefix: '/brainTumorProject',
 }
 
