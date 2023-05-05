@@ -12,7 +12,7 @@ export default function Home() {
 
   
   const handleTryClick = () => {
-    router.push("/try");
+    router.push("/UploadImage");
   };
 
   const handleAboutClick = () => {

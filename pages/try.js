@@ -12,13 +12,21 @@ function Try() {
     reader.readAsDataURL(file);
     reader.onload = () => {
       setImage(reader.result);
-      setIsImageUploaded(true); // Set isImageUploaded state to true
-      // Make API call to analyze image and set result state
-      // For this example, we'll just set a dummy result
-      setResult({
-        tumorDetected: true,
-        confidence: 0.9,
-        message: "A tumor has been detected in the uploaded image",
+      setIsImageUploaded(true);
+  
+      const formData = new FormData();
+      formData.append('file', file);
+  
+      fetch('http://127.0.0.1:5000/predict', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        setResult(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
       });
     };
   };
@@ -80,18 +88,12 @@ return (
         </div>
         {result ? (
           <div className={`w-full md:w-1/2 md:mx-4 mt-4 md:mt-0`}>
-          <div className="bg-white ml-10 rounded-lg shadow p-4">
-            <p className="text-lg font-semibold mb-2">
-              Result:{" "}
-              {result.tumorDetected
-                ? "Tumor Detected"
-                : "No Tumor Detected"}
-            </p>
-            <p className="mb-2">
-              Confidence: {result.confidence.toFixed(2) * 100}%{" "}
-            </p>
-            <p className="text-gray-600">{result.message}</p>
-          </div>
+          <div className="bg-white ml-10 rounded-lg shadow p-4 flex justify-center items-center">
+  <p className="text-lg text-center uppercase font-semibold">
+    {result} Detected
+  </p>
+</div>
+
           <div className="text-center mt-4">
             <button
               className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

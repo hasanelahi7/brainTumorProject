@@ -31,18 +31,18 @@ const Navbar = () => {
                     Home
                 </Typography>
             </Link>
-            <Link href="/news" className="flex items-center">
+            <Link href="/try" className="flex items-center">
                 <Typography
                     as="li"
                     variant="paragraph"
                     className={
-                        router.pathname == '/news'
+                        router.pathname == '/try'
                             ? 'cursor-pointer px-2 py-1 font-semibold text-white border-blue-500 bg-blue-500 rounded-md	border-4'
                             : 'cursor-pointer p-1 font-semibold text-blue-500'
                     }
                     onClick={() => setOpenNav(false)}
                 >
-                    News
+                    Scan Images
                 </Typography>
             </Link>
             <Link href="/about" className="flex items-center">
