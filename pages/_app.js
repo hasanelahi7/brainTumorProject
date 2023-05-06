@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
          <Head>
          <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
 
-                <title>Brain Tumor</title>
+                <title>Tumour Finder</title>
             </Head>
         <Component {...pageProps} />
     </Layout>

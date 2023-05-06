@@ -9,7 +9,7 @@ function contactUs() {
             Help Us With Feedback
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-            Got a sugesstion? Want to contribute towards models? Want to Report
+            Got a suggestion? Want to contribute towards models? Want to report
             a malfunction? Let us know.
           </p>
           <form

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Docs() {
+function faqs() {
   const faqs = [
     {
       question: 'What is brain tumour detection using MRI?',
@@ -12,7 +12,7 @@ function Docs() {
     },
     {
       question: 'Is the tool accurate?',
-      answer: 'The accuracy of the tool is subject to the quality of the MRI images used as input. While the deep learning algorithm would most likely to return correct results, it has not been validated for clinical use. Hence, the tool cannot be used for clinical purposes but can be employed for research purposes.',
+      answer: 'The accuracy of the tool is subject to the quality of the MRI images used as input. While the deep learning algorithm would most likely return correct results, it has not been validated for clinical use. Hence, the tool cannot be used for clinical purposes but can be employed for research purposes.',
     },
     {
       question: 'What types of brain tumours can the tool detect?',
@@ -59,7 +59,7 @@ function Docs() {
   return (
 
 <div className="text-center p-4 rounded-lg">
-  <h1 className="text-2xl font-bold text-blue-500 mb-4">Hi! We are here to answer your questions.</h1>
+  <h1 className="text-2xl font-bold text-black-500 mb-4">Hi! We are here to answer your questions.</h1>
   <div className="w-3/4 mt-[2.75rem]">
     {faqs.map((faq, index) => (
       <div key={index} className="mb-4">
@@ -76,14 +76,10 @@ function Docs() {
   </div>
 </div>
 
-
-
-
-
   );
 }
 
-export default Docs;
+export default faqs;
 
 
 

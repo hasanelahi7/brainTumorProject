@@ -42,9 +42,25 @@ const Navbar = () => {
                     }
                     onClick={() => setOpenNav(false)}
                 >
-                    Scan Images
+                    Scan MRI
                 </Typography>
             </Link>
+            
+            <Link href="/mission" className="flex items-center">
+                <Typography
+                    as="li"
+                    variant="paragraph"
+                    className={
+                        router.pathname == '/mission'
+                            ? 'cursor-pointer px-2 py-1 font-semibold text-white border-blue-500 bg-blue-500 rounded-md	border-4'
+                            : 'cursor-pointer p-1 font-semibold text-blue-500'
+                    }
+                    onClick={() => setOpenNav(false)}
+                >
+                    Our Mission
+                </Typography>
+            </Link>
+
             <Link href="/faqs" className="flex items-center">
                 <Typography
                     as="li"
@@ -57,20 +73,6 @@ const Navbar = () => {
                     onClick={() => setOpenNav(false)}
                 >
                     FAQs
-                </Typography>
-            </Link>
-            <Link href="/about" className="flex items-center">
-                <Typography
-                    as="li"
-                    variant="paragraph"
-                    className={
-                        router.pathname == '/about'
-                            ? 'cursor-pointer px-2 py-1 font-semibold text-white border-blue-500 bg-blue-500 rounded-md	border-4'
-                            : 'cursor-pointer p-1 font-semibold text-blue-500'
-                    }
-                    onClick={() => setOpenNav(false)}
-                >
-                    About
                 </Typography>
             </Link>
 
@@ -96,7 +98,7 @@ const Navbar = () => {
             <div className="container flex items-center justify-between text-blue-gray-900">
                 <Link href="/">
                     <h1 className="mr-4 text-3xl cursor-pointer py-1.5 font-bold text-blue-500">
-                        Bahria University
+                        Tumour Finder
                     </h1>
                 </Link>
 

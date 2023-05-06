@@ -39,10 +39,10 @@ return (
   <div className="flex flex-col items-center justify-center mt-3">
     <div className="w-full max-w-3xl">
       <h1 className="text-3xl text-center font-bold mb-2">
-        Brain Tumor Detection System
+        Automated Brain Tumour Detection
       </h1>
       <p className="text-gray-600 text-center mb-12">
-        Upload an image to analyze for brain tumor detection
+        Upload an image to analyze for brain tumour detection
       </p>
       <div className="flex flex-col md:flex-row justify-center items-center">
         <div className={`w-full md:w-1/2 flex items-center max-w-md ml-2  justify-center ${result ? 'md:mr-4' : ''}`}>

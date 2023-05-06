@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function About() {
+export default function Mission() {
   return (
     <div>
       <h1 className="text-6xl font-thin">Our mission</h1>

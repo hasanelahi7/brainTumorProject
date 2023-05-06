@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   const handleAboutClick = () => {
-    router.push("/about");
+    router.push("/faqs");
   };
 
   return (
@@ -24,8 +24,11 @@ export default function Home() {
       <div className="w-full md:w-2/3 mx-auto flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 px-8 md:px-0">
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Brain Tumor Detection System
+            Automated Brain Tumour Detection
           </h1>
+          <p className="text-gray-600 text-center mb-12">
+        Early detection of brain tumours can significantly improve treatment outcomes and promote better health for patients
+        </p>
           <div className="flex flex-col md:flex-row gap-4 mt-7 justify-center md:justify-center">
             <button
               className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-xl"
