@@ -102,6 +102,14 @@ return (
               Reset
             </button>
           </div>
+
+          {/* <div className="bg-white ml-10 rounded-lg shadow p-4 flex justify-center items-center">
+  <p className="text-lg text-center uppercase font-semibold">
+  Disclaimer: The deep learning algorithm is not validated for clinical use but can be used for research purposes.
+  </p>
+</div> */}
+
+          
         </div>
         
           
