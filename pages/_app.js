@@ -8,10 +8,11 @@ export default function App({ Component, pageProps }) {
     <Layout>
          <Head>
          <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
-
                 <title>Tumour Finder</title>
             </Head>
         <Component {...pageProps} />
     </Layout>
 
 )}
+
+
