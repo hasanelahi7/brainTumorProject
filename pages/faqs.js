@@ -31,7 +31,7 @@ function faqs() {
     },
     {
       question: 'How secure is my data?',
-      answer: 'We take data security and privacy very seriously. All MRI images uploaded to the web application are encrypted and stored securely. We do not share or sell any user data to third parties.',
+      answer: 'We take data security and privacy very seriously. Your data is securely handled and protected. We do not share or sell any user data to third parties.',
     },
     {
       question: 'How much does it cost to use the tool?',

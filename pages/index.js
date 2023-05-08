@@ -23,15 +23,11 @@ export default function Home() {
 {showPopup && (
   <div className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center" onClick={handleClosePopup}>
     <div className="bg-white rounded-lg shadow-md p-2" onBlur={handleClosePopup}>
-      <h2 className="text-2xl text-center mb-4">See How It Works</h2>
+      {/* <h2 className="text-2xl text-center mb-4">See How It Works</h2> */}
       <img src="/brainTumorProject/seeHow.gif" alt="gif" className="max-h-96 max-w-96 object-contain mx-auto mb-4 rounded-lg" />
     </div>
   </div>
 )}
-
-
-
-
 
       <div className="w-full md:w-2/3 mx-auto flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 px-8 md:px-0">
