@@ -49,37 +49,36 @@ function faqs() {
 
   const toggleFAQ = (index) => {
     if (expandedIndex === index) {
-      setExpandedIndex(-1); // Collapse if already expanded
+      setExpandedIndex(-1);
     } else {
-      setExpandedIndex(index); // Expand if collapsed
+      setExpandedIndex(index);
     }
   };
 
   return (
 
-<div className="text-center p-4 rounded-lg">
-<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Frequently Asked Questions
-          </h2>
-           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-           We are here to answer your questions
-          </p>
-  {/* <h1 className="text-2xl text-black-500 mb-4">Hi! We are here to answer your questions.</h1> */}
-  <div className="w-3/4 mt-[2.75rem]">
-    {faqs.map((faq, index) => (
-      <div key={index} className="mb-4">
-        <div
-          className="flex cursor-pointer transition-colors duration-300"
-          onClick={() => toggleFAQ(index)}
-        >
-          <span className="mr-2 text-blue-500">{expandedIndex === index ? '-' : '+'}</span>
-          <h3 className="text-lg font-">{faq.question}</h3>
-        </div>
-        {expandedIndex === index && <div className="mt-2 text-left ml-5">{faq.answer}</div>}
+    <div className="text-center p-4 rounded-lg">
+      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        Frequently Asked Questions
+      </h2>
+      <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        We are here to answer your questions
+      </p>
+      <div className="w-3/4 mt-[2.75rem]">
+        {faqs.map((faq, index) => (
+          <div key={index} className="mb-4">
+            <div
+              className="flex cursor-pointer transition-colors duration-300"
+              onClick={() => toggleFAQ(index)}
+            >
+              <span className="mr-2 text-blue-500">{expandedIndex === index ? '-' : '+'}</span>
+              <h3 className="text-lg font-">{faq.question}</h3>
+            </div>
+            {expandedIndex === index && <div className="mt-2 text-left ml-5">{faq.answer}</div>}
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-</div>
+    </div>
 
   );
 }

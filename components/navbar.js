@@ -98,7 +98,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between text-blue-gray-900">
         <Link href="/">
           <div className="flex items-center">
-            <img  src="/brainTumorProject/logo.png" alt="Logo" className="-mr-3 w-[100px]" />
+            <img src="/brainTumorProject/logo.png" alt="Logo" className="-mr-3 w-[100px]" />
             <h1 className="mr-4 text-3xl cursor-pointer py-1.5 font-bold text-blue-500">
               Tumour Finder
             </h1>

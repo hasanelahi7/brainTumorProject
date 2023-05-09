@@ -46,9 +46,8 @@ function Try() {
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div
-            className={`w-full md:w-1/2 flex items-center max-w-md ml-2  justify-center ${
-              result ? "md:mr-4" : ""
-            }`}
+            className={`w-full md:w-1/2 flex items-center max-w-md ml-2  justify-center ${result ? "md:mr-4" : ""
+              }`}
           >
             {image ? (
               <img
