@@ -46,18 +46,18 @@ const Navbar = () => {
         </Typography>
       </Link>
 
-      <Link href="/mission" className="flex items-center">
+      <Link href="/about" className="flex items-center">
         <Typography
           as="li"
           variant="paragraph"
           className={
-            router.pathname == "/mission"
+            router.pathname == "/about"
               ? "cursor-pointer px-2 py-1 font-semibold text-white border-blue-500 bg-blue-500 rounded-md	border-4"
               : "cursor-pointer p-1 font-semibold text-blue-500"
           }
           onClick={() => setOpenNav(false)}
         >
-          Our Mission
+          About
         </Typography>
       </Link>
 
@@ -73,6 +73,21 @@ const Navbar = () => {
           onClick={() => setOpenNav(false)}
         >
           FAQs
+        </Typography>
+      </Link>
+
+      <Link href="/facilities" className="flex items-center">
+        <Typography
+          as="li"
+          variant="paragraph"
+          className={
+            router.pathname == "/facilities"
+              ? "cursor-pointer px-2 py-1 font-semibold text-white border-blue-500 bg-blue-500 rounded-md	border-4"
+              : "cursor-pointer p-1 font-semibold text-blue-500"
+          }
+          onClick={() => setOpenNav(false)}
+        >
+          Tumour Facilities
         </Typography>
       </Link>
 

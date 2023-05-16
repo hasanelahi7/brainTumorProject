@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Mission() {
+export default function About() {
   return (
     <div>
-      <h1 className="text-6xl font-thin">Our mission</h1>
+      <h1 className="text-5xl text-center font-thin">Our mission</h1>
 
       <div className="flex items-center mt-16">
         <img src="/brainTumorProject/brainCell.png" className="w-1/2 mr-8" />
