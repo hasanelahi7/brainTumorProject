@@ -4,7 +4,7 @@ const ClinicPage = () => {
   const cities = [
     {
       name: "Karachi",
-      color: "#CD5C5C",
+      color: "#D0D3D4",
       hospitals: [
         "Aga Khan University Hospital",
         "Liaquat National Hospital",
@@ -18,7 +18,7 @@ const ClinicPage = () => {
     },
     {
       name: "Lahore",
-      color: "#F08080",
+      color: "#B2BABB",
       hospitals: [
         "Mayo Hospital",
         "Children Hospital",
@@ -38,7 +38,7 @@ const ClinicPage = () => {
     },
     {
       name: "Islamabad",
-      color: "#FA8072",
+      color: "#AEB6BF",
       hospitals: ["Shifa International Hospital", "PIMS"],
       subcity: {
         name: "Rawalpindi",
@@ -47,7 +47,7 @@ const ClinicPage = () => {
     },
     {
       name: "Peshawar",
-      color: "#E9967A",
+      color: "#A9CCE3",
       hospitals: [
         "Lady Reading Hospital",
         "North West Hospital",
@@ -65,7 +65,7 @@ const ClinicPage = () => {
   const cities2 = [
     {
       name: "Multan",
-      color: "#E9967A",
+      color: "#A9CCE3",
       hospitals: [
         "Nishtar Hospital",
         "CMH",
@@ -78,7 +78,7 @@ const ClinicPage = () => {
     },
     {
       name: "Bahawalpur",
-      color: "#FA8072",
+      color: "#AEB6BF",
       hospitals: ["Bahawalpur Victoria Hospital"],
       subcity: {
         name: "Wah",
@@ -87,7 +87,7 @@ const ClinicPage = () => {
     },
     {
       name: "Hyderabad",
-      color: "#F08080",
+      color: "#B2BABB",
       hospitals: ["Peoples Medical College"],
       subcity: {
         name: "Sukkur",
@@ -96,7 +96,7 @@ const ClinicPage = () => {
     },
     {
       name: "Quetta",
-      color: "#CD5C5C",
+      color: "#D0D3D4",
       hospitals: ["Bolan Medical Centre", "Doctors Hospital Quetta"],
     },
   ];
@@ -104,7 +104,7 @@ const ClinicPage = () => {
   return (
     <div className="flex flex-col items-center justify-start">
       <h1 className="mb-12 mt-2 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-        Clinics and Diagnostic Centers in Pakistan
+        Clinics, Diagnostic Centres and Hospitals in Pakistan for Brain Tumours
       </h1>
 
       <div className="flex justify-center gap-5">
