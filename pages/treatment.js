@@ -4,7 +4,6 @@ const ClinicPage = () => {
   const cities = [
     {
       name: "Karachi",
-      color: "#D0D3D4",
       hospitals: [
         "Aga Khan University Hospital",
         "Liaquat National Hospital",
@@ -18,7 +17,6 @@ const ClinicPage = () => {
     },
     {
       name: "Lahore",
-      color: "#B2BABB",
       hospitals: [
         "Mayo Hospital",
         "Children Hospital",
@@ -38,7 +36,6 @@ const ClinicPage = () => {
     },
     {
       name: "Islamabad",
-      color: "#AEB6BF",
       hospitals: ["Shifa International Hospital", "PIMS"],
       subcity: {
         name: "Rawalpindi",
@@ -47,7 +44,6 @@ const ClinicPage = () => {
     },
     {
       name: "Peshawar",
-      color: "#A9CCE3",
       hospitals: [
         "Lady Reading Hospital",
         "North West Hospital",
@@ -65,7 +61,6 @@ const ClinicPage = () => {
   const cities2 = [
     {
       name: "Multan",
-      color: "#A9CCE3",
       hospitals: [
         "Nishtar Hospital",
         "CMH",
@@ -78,7 +73,6 @@ const ClinicPage = () => {
     },
     {
       name: "Bahawalpur",
-      color: "#AEB6BF",
       hospitals: ["Bahawalpur Victoria Hospital"],
       subcity: {
         name: "Wah",
@@ -87,7 +81,6 @@ const ClinicPage = () => {
     },
     {
       name: "Hyderabad",
-      color: "#B2BABB",
       hospitals: ["Peoples Medical College"],
       subcity: {
         name: "Sukkur",
@@ -96,7 +89,6 @@ const ClinicPage = () => {
     },
     {
       name: "Quetta",
-      color: "#D0D3D4",
       hospitals: ["Bolan Medical Centre", "Doctors Hospital Quetta"],
     },
   ];
@@ -112,7 +104,7 @@ const ClinicPage = () => {
           <div
             key={index}
             className={`border-gray-400 border-2 p-4 rounded-lg shadow-md text-center h-[500px] w-[250px]`}
-            style={{ backgroundColor: `${city.color}` }}
+            style={{ backgroundColor: "#AEB6BF"}}
           >
             <h2 className="text-xl font-bold mb-4 text-white">{city.name}</h2>
             <ul className="list-disc text-left ml-4">
@@ -141,7 +133,7 @@ const ClinicPage = () => {
           <div
             key={index}
             className="border-gray-400 border-2 p-4 rounded-lg shadow-md text-center h-[300px] w-[250px]"
-            style={{ backgroundColor: `${city.color}` }}
+            style={{ backgroundColor: "#AEB6BF" }}
           >
             <h2 className="text-xl font-bold mb-4 text-white">{city.name}</h2>
             <ul className="list-disc text-left ml-4">
